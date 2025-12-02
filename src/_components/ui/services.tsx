@@ -78,9 +78,9 @@ export function Services() {
     <section className="bg-white py-16">
       <div className="container mx-auto px-4">
 
-        <h2 className="text-4xl font-bold mb-12">Serviços</h2>
+        <h2 data-aos="fade-down" className="text-4xl font-bold mb-12">Serviços</h2>
 
-        <div className="relative">
+        <div data-aos="fade-up" data-aos-delay="200" className="relative">
 
           <div className='overflow-hidden' ref={emblaRef}>
             <div className='flex'>
