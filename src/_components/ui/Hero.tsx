@@ -19,17 +19,19 @@ export function Hero() {
       </div>
 
       <div className="container mx-auto pt-16 pd:16 md:pb-0 px-4 relative">
-        <article className="grid grid-cols-1 lg:grid-cols-2 gap-8  ">
+        <article className="grid grid-cols-1 lg:grid-cols-2 gap-8 ">
           <div className="space-y-6">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-10">
+            <h1 data-aos="fade-down" className="text-3xl md:text-4xl lg:text-5xl font-bold leading-10">
               Seu Pet merece cuidado, carinho e atenção especial.
             </h1>
-            <p className="lg:text-lg">
+            <p data-aos="fade-right" data-aos-delay="200" className="lg:text-lg">
               Oferecemos os melhores serviços para garantir o bem-estar e a
               felicidade do seu amigo de quatro patas.
             </p>
 
             <a
+              data-aos="fade-right"
+              data-aos-delay="400"
               className="bg-green-500 px-5 py-2 rounded-md
                 font-semibold flex items-center justify-center 
                 w-fit gap-2"
@@ -39,7 +41,7 @@ export function Hero() {
               Contato via Whatsapp
             </a>
 
-            <div className="mt-8">
+            <div data-aos="fade-up" data-aos-delay="600" className="mt-8">
               <p className="text-sm mb-4">
                 <span className="bg-black text-white px-2 py-1 rounded-md">
                   5%
@@ -60,6 +62,7 @@ export function Hero() {
           </div>
           <div className="hidden md:block h-full relative">
             <Image
+              data-aos="fade-left" 
               src={CachorroHero}
               alt="Foto do doguinho"
               className="object-contain"

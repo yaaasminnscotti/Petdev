@@ -12,8 +12,9 @@ export function About() {
 
         <div className=" grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
+          {/* Bloco de Imagens (Fade Left) */}
           <div className="relative">
-            <div className="relative w-full h-[500px] rounded-3xl overflow-hidden">
+            <div data-aos="fade-left" className="relative w-full h-[500px] rounded-3xl overflow-hidden">
               <Image
                 src={Sobre}
                 alt="foto do cachorro"
@@ -23,7 +24,8 @@ export function About() {
               />
             </div>
 
-            <div className="absolute w-50 h-40 right-4 -bottom-8 rounded-lg border-4 overflow-hidden border-white">
+            {/* Segunda imagem com atraso para efeito sequencial */}
+            <div data-aos="fade-left" data-aos-delay="300" className="absolute w-50 h-40 right-4 -bottom-8 rounded-lg border-4 overflow-hidden border-white">
               <Image
                 src={Sobre2}
                 alt="foto do gatinho"
@@ -34,7 +36,8 @@ export function About() {
             </div>
           </div>
 
-          <div className="space-y-6 mt-10">
+          {/* Bloco de Conteúdo (Fade Right) */}
+          <div data-aos="fade-right" className="space-y-6 mt-10">
             <h2 className="text-4xl font-bold"> Sobre</h2>
 
             <p>
